@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>CHECKOUT</title>
+    <meta charset="utf-8"/>
+  </head>
+
+  <body>
+        <!-- cabecalho -->
+        <div>
+            <h1>Ótima escolha!</h1>
+            <p> Obrigado por comprar na RCHLO! Preencha seus dados para efetivar a compra.</p>
+            <h2>Sua compra</h2>
+        </div>
+
+        <!-- produto -->
+        <img src="imagens/produto.jfif"/>
+        <br />
+        <br />
+        Produto <br />
+        &emsp;&emsp;Camiseta Manga Curta Malha Tie Dye The Simpsons Azul Riachuelo <br />
+
+        Cor <br />
+        &emsp;&emsp;Azul <br />
+        Tamanho <br />
+        &emsp;&emsp;G <br />
+        Preço <br />
+        &emsp;&emsp;R$69,90 <br />
+
+        <br />
+
+        <form name="checkout" action="checkout.html" method="post">
+            <!-- dados pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome" /><br />
+                
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" /><br />
+                
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" /><br />
+                
+                <input type="checkbox" name="newsletter"> Quero receber a newsletter da RCHLO!
+            </fieldset>
+
+            <!-- dados Cartao -->
+            <fieldset>
+                <legend>Cartão de crédito</legend>
+                
+                <label for="nome">Numero - CVV</label>
+                <input type="text" /><br />
+
+                <label for="bandeira">Bandeira</label>
+                <select name="bandeira" id="bandeira">
+                    <option value="">Selecione uma opção</option>
+                    <option value="visa">VISA</option>
+                    <option value="master">MASTER</option>
+                    <option value="elo">ELO</option>
+                </select> <br />
+                <label for="validade">Validade</label>
+                <input type="date" name="validade" id="validade" ><br />
+            </fieldset>
+            <button>Confirmar Pedido</button>
+        </form>    
+    </body>
+</html>

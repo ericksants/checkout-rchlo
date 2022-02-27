@@ -1,6 +1,6 @@
 (function () {
     // Procura por todos os formularios que tenham classe de validacao
-    var forms = document.querySelectorAll('.needs-validation')
+    let forms = document.querySelectorAll('.needs-validation')
 
     // Valida antes do envio do formulario
     Array.prototype.slice.call(forms)
